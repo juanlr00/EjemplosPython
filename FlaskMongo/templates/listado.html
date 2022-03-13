@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado</title>
+</head>
+
+<body>
+    <table>
+        <theader>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+        </theader>
+        <tbody>
+            {% for alumno in clase %}
+            <tr>
+                <td>{{alumno['_id']}}</td>
+                <td>{{alumno.nombre}}</td>
+                <td>{{alumno.apellido}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
